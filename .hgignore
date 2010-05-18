@@ -1,2 +1,8 @@
 .*\.sass-cache
 .*\.swp$
+build
+.*\.zip
+.*\.crx
+.*\.pem
+light-themes-selection/stylesheets/selection.css
+light-themes-scrollbar/stylesheets/scrollbar.css

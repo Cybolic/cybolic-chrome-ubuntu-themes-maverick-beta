@@ -3,7 +3,7 @@ gem 'rubyzip'
 require 'zip/zip'
 require 'zip/zipfilesystem'
 
-zip = File.join(File.join('build', "light-themes-scrollbar.zip"))
+zip = File.join(File.join('build', "light-themes-selection.zip"))
 
 task :default => :package
 
@@ -22,7 +22,7 @@ task :compile => :clear do
 end
 
 task :package => :compile do
-	source_files = ["images/icon48.png", "manifest.json", "stylesheets/scrollbar.css"]
+	source_files = ["images/icon48.png", "manifest.json", "stylesheets/selection.css"]
 	Zip::ZipFile.open(zip, 'w') do
 		|zipfile|
 		0.upto(source_files.size-1) do |i|
