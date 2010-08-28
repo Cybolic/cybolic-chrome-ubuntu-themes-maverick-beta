@@ -1,0 +1,13 @@
+{
+     "version": "1.0"
+    ,"name": "Light Themes Maverick Beta Scrollbars"
+    ,"description": "Modded scrollbars that match the scrollbars used for the light-themes Radiance and Ambiance in Ubuntu 10.10"
+    ,"icons": {
+        "48": "images/icon48.png"
+    }
+    ,"content_scripts": [{
+         "matches": ["http://*/*", "https://*/*", "*://*/*"]
+        ,"css": ["stylesheets/scrollbar.css"]
+        ,"js": ["js/scrollbars.js"]
+    }]
+}
